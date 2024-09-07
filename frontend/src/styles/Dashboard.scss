@@ -1,0 +1,48 @@
+// src/styles/Dashboard.scss
+.dashboard {
+  display: flex;
+  height: 100vh; // Full viewport height
+}
+
+.sidebar {
+  width: 250px; // Fixed width for sidebar
+  background-color: #fff; // Background color for sidebar
+  overflow: auto; // Allow scrolling if content overflows
+}
+
+.main-content {
+  flex-grow: 1; // Take up remaining space
+  display: flex;
+  flex-direction: column; // Stack header and main content vertically
+}
+
+.header {
+  background-color: #fff; // Background color for header
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); // Shadow for header
+  padding: 10px 20px; // Padding for header
+}
+
+.content {
+  margin-left: 250px;
+  flex-grow: 1; // Take up remaining space
+  padding: 40px; // Padding for content area
+  background-color: #fff; // Background color for content
+  overflow-y: auto; // Allow scrolling if content overflows
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; // Adjust width for smaller screens
+  }
+}
+
+@media (max-width: 576px) {
+  .sidebar {
+    width: 100%; // Sidebar takes full width on very small screens
+    height: auto; // Let it grow with content
+  }
+  
+  .main-content {
+    margin-top: 0; // Remove top margin on small screens
+  }
+}

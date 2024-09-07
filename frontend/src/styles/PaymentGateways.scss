@@ -1,0 +1,31 @@
+// src/styles/PaymentGateways.scss
+
+.payment-gateways {
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+  
+    .gateway-list {
+      display: grid;
+      gap: 1.5rem;
+    }
+  
+    .gateway-card {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+      border: 1px solid #eaeaea;
+      border-radius: 0.5rem;
+    }
+  
+    .modal {
+      .modal-content {
+        max-width: 30rem;
+      }
+    }
+  }
+  
